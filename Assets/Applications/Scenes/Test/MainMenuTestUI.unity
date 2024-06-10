@@ -776,6 +776,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d45ada4463ecd56488ade2c39690aeac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _driftLevelsUI: {fileID: 0}
+  _freeRideLevelsUI: {fileID: 0}
+  _gameModesUI: {fileID: 0}
 --- !u!4 &629968188
 Transform:
   m_ObjectHideFlags: 0
@@ -1542,7 +1545,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 629968187}
         m_TargetAssemblyTypeName: LevelBehaviour, Assembly-CSharp
-        m_MethodName: NextLevel
+        m_MethodName: LoadNextScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
