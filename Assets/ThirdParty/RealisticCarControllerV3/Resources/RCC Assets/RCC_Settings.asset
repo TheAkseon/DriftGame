@@ -228,26 +228,26 @@ MonoBehaviour:
     counterSteeringMaximum: 1
     steeringSensitivityMinimum: 1
     steeringSensitivityMaximum: 1
-    steerHelperAngularVelStrengthMinimum: 0.1
-    steerHelperAngularVelStrengthMaximum: 0.1
+    steerHelperAngularVelStrengthMinimum: 0
+    steerHelperAngularVelStrengthMaximum: 0.01
     steerHelperLinearVelStrengthMinimum: 0
     steerHelperLinearVelStrengthMaximum: 0
-    tractionHelperStrengthMinimum: 0.2
-    tractionHelperStrengthMaximum: 0.2
+    tractionHelperStrengthMinimum: 0
+    tractionHelperStrengthMaximum: 0
     antiRollFrontHorizontalMinimum: 0
     antiRollRearHorizontalMinimum: 0
     gearShiftingDelayMaximum: 0.15
     angularDrag: 0.5
-    angularDragHelperMinimum: 0.1
-    angularDragHelperMaximum: 0.1
-    forwardExtremumSlip: 0.325
+    angularDragHelperMinimum: 0
+    angularDragHelperMaximum: 0
+    forwardExtremumSlip: 0.4
     forwardExtremumValue: 1
-    forwardAsymptoteSlip: 1
-    forwardAsymptoteValue: 1
-    sidewaysExtremumSlip: 0.45
+    forwardAsymptoteSlip: 0.5
+    forwardAsymptoteValue: 0.75
+    sidewaysExtremumSlip: 0.2
     sidewaysExtremumValue: 1
-    sidewaysAsymptoteSlip: 1
-    sidewaysAsymptoteValue: 1
+    sidewaysAsymptoteSlip: 0.5
+    sidewaysAsymptoteValue: 0.75
   - behaviorName: Semi Arcade
     steeringHelper: 1
     tractionHelper: 1
