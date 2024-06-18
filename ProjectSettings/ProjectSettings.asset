@@ -842,7 +842,7 @@ PlayerSettings:
     PS5: BCG_RCC
     QNX: BCG_RCC
     Stadia: BCG_RCC
-    Standalone: BCG_RCC
+    Standalone: BCG_RCC;YG_PLUGIN_YANDEX_GAME
     VisionOS: BCG_RCC
     WebGL: BCG_RCC
     Windows Store Apps: BCG_RCC
