@@ -742,7 +742,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 102514, guid: 0722a9e01046ddd4289c83d741ad6252, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 708845853}
   m_SourcePrefab: {fileID: 100100000, guid: 0722a9e01046ddd4289c83d741ad6252, type: 3}
 --- !u!4 &708845851 stripped
 Transform:
@@ -754,6 +757,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 102514, guid: 0722a9e01046ddd4289c83d741ad6252, type: 3}
   m_PrefabInstance: {fileID: 708845850}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &708845853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 708845852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4647038f2ca3c404a850aa7e92572413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _driftTreshold: 10
+  _requiredSpeed: 10
+  driftScoreText: {fileID: 847158650}
+  driftThreshold: 10
+  scoreMilestones:
+  - 1000
+  - 5000
+  - 10000
+  multipliers:
+  - 1
+  - 2
+  - 3
+  - 4
 --- !u!1001 &747708923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1272,7 +1300,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3354115180038256482, guid: 6e4f5358be5ec5142b505cdeab793b79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1257514409}
   m_SourcePrefab: {fileID: 100100000, guid: 6e4f5358be5ec5142b505cdeab793b79, type: 3}
 --- !u!4 &1257514407 stripped
 Transform:
@@ -1284,6 +1315,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3354115180038256482, guid: 6e4f5358be5ec5142b505cdeab793b79, type: 3}
   m_PrefabInstance: {fileID: 1257514406}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1257514409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1257514408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4647038f2ca3c404a850aa7e92572413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _driftTreshold: 10
+  _requiredSpeed: 10
+  driftScoreText: {fileID: 847158650}
+  driftThreshold: 10
+  scoreMilestones:
+  - 1000
+  - 5000
+  - 10000
+  multipliers:
+  - 1
+  - 2
+  - 3
+  - 4
 --- !u!1001 &1638108476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1343,7 +1399,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2533337409777661332, guid: 9a667d070a973084e998d8667e8d2818, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1638108479}
   m_SourcePrefab: {fileID: 100100000, guid: 9a667d070a973084e998d8667e8d2818, type: 3}
 --- !u!4 &1638108477 stripped
 Transform:
@@ -1355,6 +1414,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2533337409777661332, guid: 9a667d070a973084e998d8667e8d2818, type: 3}
   m_PrefabInstance: {fileID: 1638108476}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1638108479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638108478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4647038f2ca3c404a850aa7e92572413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _driftTreshold: 10
+  _requiredSpeed: 10
+  driftScoreText: {fileID: 847158650}
+  driftThreshold: 10
+  scoreMilestones:
+  - 1000
+  - 5000
+  - 10000
+  multipliers:
+  - 1
+  - 2
+  - 3
+  - 4
 --- !u!1001 &1720877457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1414,7 +1498,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1609731031090814, guid: 582ec036f71d2b84590c26a52a0a52b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1720877460}
   m_SourcePrefab: {fileID: 100100000, guid: 582ec036f71d2b84590c26a52a0a52b6, type: 3}
 --- !u!4 &1720877458 stripped
 Transform:
@@ -1426,6 +1513,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1609731031090814, guid: 582ec036f71d2b84590c26a52a0a52b6, type: 3}
   m_PrefabInstance: {fileID: 1720877457}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1720877460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720877459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4647038f2ca3c404a850aa7e92572413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _driftTreshold: 10
+  _requiredSpeed: 10
+  driftScoreText: {fileID: 847158650}
+  driftThreshold: 10
+  scoreMilestones:
+  - 1000
+  - 5000
+  - 10000
+  multipliers:
+  - 1
+  - 2
+  - 3
+  - 4
 --- !u!1 &1724447622
 GameObject:
   m_ObjectHideFlags: 0
