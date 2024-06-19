@@ -26,6 +26,7 @@ public class MainMenuView : MonoBehaviour
     {
         _levelCanvasView.gameObject.SetActive(true);
         SaveData.Instance.Data.AppliedCarIndex = _shopController.LoadIndex;
+        SaveData.Instance.SaveYandex();
     }
 
     private void SetAudio()

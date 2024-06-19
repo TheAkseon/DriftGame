@@ -794,6 +794,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e0379af4e7891c429a082dd4c320813, type: 3}
+--- !u!114 &350091134 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4757100067341874553, guid: 8e0379af4e7891c429a082dd4c320813, type: 3}
+  m_PrefabInstance: {fileID: 350091133}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 42132944286163f4f807e22833fc2932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &366889869
 GameObject:
   m_ObjectHideFlags: 0
@@ -2040,6 +2051,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5a0de32067718418df6ca77844474c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _shopController: {fileID: 350091134}
   _levelCanvasView: {fileID: 1813665025}
   _audioButton: {fileID: 1558164337}
   _startButton: {fileID: 1587628877}

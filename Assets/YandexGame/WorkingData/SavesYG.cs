@@ -25,8 +25,7 @@ namespace YG
             RecordDriftScore = 0;
             muteMusic = false;
             AppliedCarIndex = 0;
-            IsBuyShop = new List<bool>() {true, false, false, false, false, false, false, false, false, false,
-    false, false, false, false, false, false, false};
+            IsBuyShop = new List<bool>() {true, false, false, false, false};
     }
     }
 }

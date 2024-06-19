@@ -63,6 +63,8 @@ public class DriftScore : MonoBehaviour
         driftScore += driftDuration * 10f * multipliers[currentMultiplierIndex]; // Применение множителя
         Debug.Log("Drift Score: " + driftScore);
         CheckForMilestones();
+        SaveData.Instance.Data.Coins += Convert.ToInt32(driftScore / 0.7f);
+        SaveData.Instance.SaveYandex();
     }
 
     void UpdateDrift(float driftAngle)
