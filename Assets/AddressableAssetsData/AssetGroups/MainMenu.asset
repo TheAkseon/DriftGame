@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: MainMenu
   m_EditorClassIdentifier: 
-  m_GroupName: 1
+  m_GroupName: MainMenu
   m_Data:
     m_SerializedData: []
   m_GUID: f064559b64f1a714f9192c262637eeff
   m_SerializeEntries:
   - m_GUID: 6a2beed80de1e9a409db768c1d928814
-    m_Address: MainMenu
+    m_Address: 1
     m_ReadOnly: 0
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0

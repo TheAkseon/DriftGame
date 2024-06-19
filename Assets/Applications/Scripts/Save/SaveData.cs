@@ -75,6 +75,8 @@ public class SaveData : MonoBehaviour
 [Serializable]
 public class DataHolder
 {
+    public string DayTime;
+
     public int Coins = 0;
     public int RecordDriftScore = 0;
     public bool muteMusic = false;
