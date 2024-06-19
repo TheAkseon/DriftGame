@@ -682,6 +682,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4757100067341874553, guid: 8e0379af4e7891c429a082dd4c320813, type: 3}
+      propertyPath: _coinsText
+      value: 
+      objectReference: {fileID: 1502148637}
+    - target: {fileID: 4757100067341874553, guid: 8e0379af4e7891c429a082dd4c320813, type: 3}
       propertyPath: _priceText
       value: 
       objectReference: {fileID: 0}

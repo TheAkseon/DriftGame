@@ -81,6 +81,5 @@ public class DataHolder
     public int RecordDriftScore = 0;
     public bool muteMusic = false;
     public int AppliedCarIndex = 0;
-    public List<bool> IsBuyShop = new List<bool>() {true, false, false, false, false, false, false, false, false, false,
-    false, false, false, false, false, false, false};
+    public List<bool> IsBuyShop = new List<bool>() {true, false, false, false, false};
 }

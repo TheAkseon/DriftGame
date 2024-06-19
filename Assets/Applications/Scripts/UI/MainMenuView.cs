@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class MainMenuView : MonoBehaviour
 {
+    [SerializeField] private ShopController _shopController;
+
     [Header("Canvas")]
     [SerializeField] private LevelCanvasView _levelCanvasView;
 
@@ -23,6 +25,7 @@ public class MainMenuView : MonoBehaviour
     private void ActivateLevelCanvas()
     {
         _levelCanvasView.gameObject.SetActive(true);
+        SaveData.Instance.Data.AppliedCarIndex = _shopController.LoadIndex;
     }
 
     private void SetAudio()
