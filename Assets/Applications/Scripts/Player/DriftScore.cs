@@ -1,11 +1,13 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class DriftScore : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _driftScoreMultiplier;
+    [SerializeField] private TextMeshProUGUI _driftScoreText;
+    [SerializeField] private TextMeshProUGUI _driftScoreTitle;
+
     [SerializeField] private float _driftTreshold = 10f;
     [SerializeField] private float _requiredSpeed = 10f;
 
@@ -13,18 +15,22 @@ public class DriftScore : MonoBehaviour
     private bool _isDrifting = false;
 
 
-    public TextMeshProUGUI driftScoreText;
     public float driftThreshold = 10f;
-    public float[] scoreMilestones = { 1000f, 5000f, 10000f }; // Пороги для увеличения множителя
-    public float[] multipliers = { 1f, 2f, 3f, 4f }; // Множители очков
+    public float[] scoreMilestones = { 500f, 1000f, 1500f, 2000f, 2500f }; // Пороги для увеличения множителя
+    public float[] multipliers = { 2f, 3f, 4f, 5f, 6f }; // Множители очков
     private int currentMultiplierIndex = 0;
 
     private float driftScore = 0f;
     private float driftStartTime = 0f;
 
+    private bool _isActivateMultiplier = false;
+
     private void Start()
     {
         _rccCarController = FindObjectOfType<RCC_CarControllerV3>();
+        _driftScoreMultiplier.gameObject.SetActive(false);
+        _driftScoreText.gameObject.SetActive(false);
+        _driftScoreTitle.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -47,23 +53,32 @@ public class DriftScore : MonoBehaviour
             }
         }
 
-        driftScoreText.text = "+" + Mathf.RoundToInt(driftScore).ToString();
+        _driftScoreText.text = "+" + Mathf.RoundToInt(driftScore).ToString();
     }
 
     void StartDrift()
     {
         _isDrifting = true;
-        driftStartTime = Time.time;
+        //driftStartTime = Time.time;
+        _driftScoreText.gameObject.SetActive(true);
+        _driftScoreTitle.gameObject.SetActive(true);
     }
 
     void EndDrift()
     {
         _isDrifting = false;
-        float driftDuration = Time.time - driftStartTime;
-        driftScore += driftDuration * 10f * multipliers[currentMultiplierIndex]; // Применение множителя
+        //float driftDuration = Time.time - driftStartTime;
+        //driftScore += driftDuration * 10f * multipliers[currentMultiplierIndex]; // Применение множителя
         Debug.Log("Drift Score: " + driftScore);
-        CheckForMilestones();
-        SaveData.Instance.Data.Coins += Convert.ToInt32(driftScore / 0.7f);
+        //CheckForMilestones();
+        SaveData.Instance.Data.Coins += Convert.ToInt32(driftScore * 0.5f);
+
+        _driftScoreMultiplier.gameObject.SetActive(false);
+        _driftScoreText.gameObject.SetActive(false);
+        _driftScoreTitle.gameObject.SetActive(false);
+
+        driftScore = 0;
+
         SaveData.Instance.SaveYandex();
     }
 
@@ -71,14 +86,27 @@ public class DriftScore : MonoBehaviour
     {
         // Дополнительная логика для обновления очков в реальном времени, если нужно
         float driftDuration = Time.time - driftStartTime;
-        driftScore += driftAngle * Time.deltaTime * multipliers[currentMultiplierIndex]; // Применение множителя
+
+        if (_isActivateMultiplier)
+        {
+            driftScore += driftAngle * Time.deltaTime * multipliers[currentMultiplierIndex]; // Применение множителя
+        }
+        else
+        {
+            driftScore += driftAngle * Time.deltaTime;
+        }
+
+        CheckForMilestones();
     }
 
     void CheckForMilestones()
     {
         if (currentMultiplierIndex < scoreMilestones.Length && driftScore >= scoreMilestones[currentMultiplierIndex])
         {
+            _isActivateMultiplier = true;
             currentMultiplierIndex++;
+            _driftScoreMultiplier.text = multipliers[currentMultiplierIndex].ToString();
+            _driftScoreMultiplier.gameObject.SetActive(true);
             Debug.Log("Multiplier increased! Current multiplier: " + multipliers[currentMultiplierIndex]);
         }
     }
