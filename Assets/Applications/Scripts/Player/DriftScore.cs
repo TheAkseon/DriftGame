@@ -24,7 +24,7 @@ public class DriftScore : MonoBehaviour
 
     private void Start()
     {
-        _rccCarController = GetComponent<RCC_CarControllerV3>();
+        _rccCarController = FindObjectOfType<RCC_CarControllerV3>();
     }
 
     private void Update()
@@ -47,7 +47,7 @@ public class DriftScore : MonoBehaviour
             }
         }
 
-        driftScoreText.text = "Drift Score: " + Mathf.RoundToInt(driftScore).ToString();
+        driftScoreText.text = "+" + Mathf.RoundToInt(driftScore).ToString();
     }
 
     void StartDrift()

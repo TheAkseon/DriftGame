@@ -1,16 +1,16 @@
 {
-    "idSave": 432,
+    "idSave": 648,
     "isFirstSession": false,
     "language": "en",
     "promptDone": false,
-    "Coins": 244862,
+    "Coins": 10309,
     "RecordDriftScore": 0,
     "muteMusic": false,
     "AppliedCarIndex": 0,
     "IsBuyShop": [
         true,
-        true,
-        true,
+        false,
+        false,
         false,
         false
     ]
