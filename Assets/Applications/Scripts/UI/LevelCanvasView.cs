@@ -12,8 +12,12 @@ public class LevelCanvasView : MonoBehaviour
     [SerializeField] private Button _nightFreeRideButton;
     [SerializeField] private Button _backButton;
 
+    [Header("Panels")]
+    [SerializeField] private GameObject _loadingScreen;
+
     public Button DayFreeRideButton => _dayFreeRideButton;
     public Button NightFreeRideButton => _nightFreeRideButton;
+    public GameObject LoadingScreen => _loadingScreen;
 
     private void Start()
     {

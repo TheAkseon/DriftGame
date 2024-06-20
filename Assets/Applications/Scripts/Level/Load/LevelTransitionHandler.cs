@@ -23,7 +23,7 @@ public class LevelTransitionHandler : MonoBehaviour
         {
             SaveData.Instance.Data.DayTime = "night";
         }
-
+        _levelCanvasView.LoadingScreen.gameObject.SetActive(true);
         SaveData.Instance.Save();
         LevelLoader.Instance.LoadLevel(_gameLevelIndex);
     }
