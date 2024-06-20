@@ -1,18 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LevelNavigationHandler : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private Button _restartButton;
+
+    private int _levelIndex = 2;
+
+    private void Start()
     {
-        
+        _restartButton.onClick.AddListener(RestartLevel);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void RestartLevel()
     {
-        
+        LevelLoader.Instance.LoadLevel(_levelIndex);
     }
 }
