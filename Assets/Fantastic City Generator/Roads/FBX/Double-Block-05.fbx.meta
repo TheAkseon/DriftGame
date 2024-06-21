@@ -1,135 +1,389 @@
 fileFormatVersion: 2
 guid: 18dab550171068545a95afddb53fc43d
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Collider-Grass
-    100002: Collider-Road
-    100004: Colliders
-    100006: //RootNode
-    100008: Double-Block-05
-    100010: Road-Mark
-    100012: StreetLight-01b
-    100014: Trees
-    100016: Parkbench
-    100018: Parkbench--Collider
-    100020: Trees-Collider
-    100022: Parkbench-Collider
-    100024: Road-Mark-Rev
-    100026: Double-Block-05-Sidewalk
-    100028: Collider-Road-B
-    100030: Collider-Road-C
-    100032: Colliders-B
-    100034: Colliders-C
-    100036: Double-Block-05-B
-    100038: Double-Block-05-C
-    100040: Double-Block-05-Sidewalk-B
-    100042: Double-Block-05-Sidewalk-C
-    100044: Road-Mark-B
-    100046: Road-Mark-C
-    100048: Road-Mark-Rev-B
-    100050: Road-Mark-Rev-C
-    400000: Collider-Grass
-    400002: Collider-Road
-    400004: Colliders
-    400006: //RootNode
-    400008: Double-Block-05
-    400010: Road-Mark
-    400012: StreetLight-01b
-    400014: Trees
-    400016: Parkbench
-    400018: Parkbench--Collider
-    400020: Trees-Collider
-    400022: Parkbench-Collider
-    400024: Road-Mark-Rev
-    400026: Double-Block-05-Sidewalk
-    400028: Collider-Road-B
-    400030: Collider-Road-C
-    400032: Colliders-B
-    400034: Colliders-C
-    400036: Double-Block-05-B
-    400038: Double-Block-05-C
-    400040: Double-Block-05-Sidewalk-B
-    400042: Double-Block-05-Sidewalk-C
-    400044: Road-Mark-B
-    400046: Road-Mark-C
-    400048: Road-Mark-Rev-B
-    400050: Road-Mark-Rev-C
-    2300000: Collider-Grass
-    2300002: Collider-Road
-    2300004: Colliders
-    2300006: Double-Block-05
-    2300008: Road-Mark
-    2300010: StreetLight-01b
-    2300012: Trees
-    2300014: Parkbench
-    2300016: Parkbench--Collider
-    2300018: Trees-Collider
-    2300020: Parkbench-Collider
-    2300022: Road-Mark-Rev
-    2300024: Double-Block-05-Sidewalk
-    2300026: Collider-Road-B
-    2300028: Collider-Road-C
-    2300030: Colliders-B
-    2300032: Colliders-C
-    2300034: Double-Block-05-B
-    2300036: Double-Block-05-C
-    2300038: Double-Block-05-Sidewalk-B
-    2300040: Double-Block-05-Sidewalk-C
-    2300042: Road-Mark-B
-    2300044: Road-Mark-C
-    2300046: Road-Mark-Rev-B
-    2300048: Road-Mark-Rev-C
-    3300000: Collider-Grass
-    3300002: Collider-Road
-    3300004: Colliders
-    3300006: Double-Block-05
-    3300008: Road-Mark
-    3300010: StreetLight-01b
-    3300012: Trees
-    3300014: Parkbench
-    3300016: Parkbench--Collider
-    3300018: Trees-Collider
-    3300020: Parkbench-Collider
-    3300022: Road-Mark-Rev
-    3300024: Double-Block-05-Sidewalk
-    3300026: Collider-Road-B
-    3300028: Collider-Road-C
-    3300030: Colliders-B
-    3300032: Colliders-C
-    3300034: Double-Block-05-B
-    3300036: Double-Block-05-C
-    3300038: Double-Block-05-Sidewalk-B
-    3300040: Double-Block-05-Sidewalk-C
-    3300042: Road-Mark-B
-    3300044: Road-Mark-C
-    3300046: Road-Mark-Rev-B
-    3300048: Road-Mark-Rev-C
-    4300000: Collider-Road
-    4300002: Road-Mark
-    4300004: Double-Block-05
-    4300006: Colliders
-    4300008: Collider-Grass
-    4300010: StreetLight-01b
-    4300012: Trees
-    4300014: Trees-Collider
-    4300016: Parkbench
-    4300018: Parkbench--Collider
-    4300020: Parkbench-Collider
-    4300022: Road-Mark-Rev
-    4300024: Double-Block-05-Sidewalk
-    4300026: Double-Block-05-B
-    4300028: Double-Block-05-C
-    4300030: Double-Block-05-Sidewalk-B
-    4300032: Double-Block-05-Sidewalk-C
-    4300034: Colliders-B
-    4300036: Colliders-C
-    4300038: Collider-Road-B
-    4300040: Collider-Road-C
-    4300042: Road-Mark-B
-    4300044: Road-Mark-C
-    4300046: Road-Mark-Rev-B
-    4300048: Road-Mark-Rev-C
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Collider-Grass
+  - first:
+      1: 100002
+    second: Collider-Road
+  - first:
+      1: 100004
+    second: Colliders
+  - first:
+      1: 100006
+    second: //RootNode
+  - first:
+      1: 100008
+    second: Double-Block-05
+  - first:
+      1: 100010
+    second: Road-Mark
+  - first:
+      1: 100012
+    second: StreetLight-01b
+  - first:
+      1: 100014
+    second: Trees
+  - first:
+      1: 100016
+    second: Parkbench
+  - first:
+      1: 100018
+    second: Parkbench--Collider
+  - first:
+      1: 100020
+    second: Trees-Collider
+  - first:
+      1: 100022
+    second: Parkbench-Collider
+  - first:
+      1: 100024
+    second: Road-Mark-Rev
+  - first:
+      1: 100026
+    second: Double-Block-05-Sidewalk
+  - first:
+      1: 100028
+    second: Collider-Road-B
+  - first:
+      1: 100030
+    second: Collider-Road-C
+  - first:
+      1: 100032
+    second: Colliders-B
+  - first:
+      1: 100034
+    second: Colliders-C
+  - first:
+      1: 100036
+    second: Double-Block-05-B
+  - first:
+      1: 100038
+    second: Double-Block-05-C
+  - first:
+      1: 100040
+    second: Double-Block-05-Sidewalk-B
+  - first:
+      1: 100042
+    second: Double-Block-05-Sidewalk-C
+  - first:
+      1: 100044
+    second: Road-Mark-B
+  - first:
+      1: 100046
+    second: Road-Mark-C
+  - first:
+      1: 100048
+    second: Road-Mark-Rev-B
+  - first:
+      1: 100050
+    second: Road-Mark-Rev-C
+  - first:
+      4: 400000
+    second: Collider-Grass
+  - first:
+      4: 400002
+    second: Collider-Road
+  - first:
+      4: 400004
+    second: Colliders
+  - first:
+      4: 400006
+    second: //RootNode
+  - first:
+      4: 400008
+    second: Double-Block-05
+  - first:
+      4: 400010
+    second: Road-Mark
+  - first:
+      4: 400012
+    second: StreetLight-01b
+  - first:
+      4: 400014
+    second: Trees
+  - first:
+      4: 400016
+    second: Parkbench
+  - first:
+      4: 400018
+    second: Parkbench--Collider
+  - first:
+      4: 400020
+    second: Trees-Collider
+  - first:
+      4: 400022
+    second: Parkbench-Collider
+  - first:
+      4: 400024
+    second: Road-Mark-Rev
+  - first:
+      4: 400026
+    second: Double-Block-05-Sidewalk
+  - first:
+      4: 400028
+    second: Collider-Road-B
+  - first:
+      4: 400030
+    second: Collider-Road-C
+  - first:
+      4: 400032
+    second: Colliders-B
+  - first:
+      4: 400034
+    second: Colliders-C
+  - first:
+      4: 400036
+    second: Double-Block-05-B
+  - first:
+      4: 400038
+    second: Double-Block-05-C
+  - first:
+      4: 400040
+    second: Double-Block-05-Sidewalk-B
+  - first:
+      4: 400042
+    second: Double-Block-05-Sidewalk-C
+  - first:
+      4: 400044
+    second: Road-Mark-B
+  - first:
+      4: 400046
+    second: Road-Mark-C
+  - first:
+      4: 400048
+    second: Road-Mark-Rev-B
+  - first:
+      4: 400050
+    second: Road-Mark-Rev-C
+  - first:
+      23: 2300000
+    second: Collider-Grass
+  - first:
+      23: 2300002
+    second: Collider-Road
+  - first:
+      23: 2300004
+    second: Colliders
+  - first:
+      23: 2300006
+    second: Double-Block-05
+  - first:
+      23: 2300008
+    second: Road-Mark
+  - first:
+      23: 2300010
+    second: StreetLight-01b
+  - first:
+      23: 2300012
+    second: Trees
+  - first:
+      23: 2300014
+    second: Parkbench
+  - first:
+      23: 2300016
+    second: Parkbench--Collider
+  - first:
+      23: 2300018
+    second: Trees-Collider
+  - first:
+      23: 2300020
+    second: Parkbench-Collider
+  - first:
+      23: 2300022
+    second: Road-Mark-Rev
+  - first:
+      23: 2300024
+    second: Double-Block-05-Sidewalk
+  - first:
+      23: 2300026
+    second: Collider-Road-B
+  - first:
+      23: 2300028
+    second: Collider-Road-C
+  - first:
+      23: 2300030
+    second: Colliders-B
+  - first:
+      23: 2300032
+    second: Colliders-C
+  - first:
+      23: 2300034
+    second: Double-Block-05-B
+  - first:
+      23: 2300036
+    second: Double-Block-05-C
+  - first:
+      23: 2300038
+    second: Double-Block-05-Sidewalk-B
+  - first:
+      23: 2300040
+    second: Double-Block-05-Sidewalk-C
+  - first:
+      23: 2300042
+    second: Road-Mark-B
+  - first:
+      23: 2300044
+    second: Road-Mark-C
+  - first:
+      23: 2300046
+    second: Road-Mark-Rev-B
+  - first:
+      23: 2300048
+    second: Road-Mark-Rev-C
+  - first:
+      33: 3300000
+    second: Collider-Grass
+  - first:
+      33: 3300002
+    second: Collider-Road
+  - first:
+      33: 3300004
+    second: Colliders
+  - first:
+      33: 3300006
+    second: Double-Block-05
+  - first:
+      33: 3300008
+    second: Road-Mark
+  - first:
+      33: 3300010
+    second: StreetLight-01b
+  - first:
+      33: 3300012
+    second: Trees
+  - first:
+      33: 3300014
+    second: Parkbench
+  - first:
+      33: 3300016
+    second: Parkbench--Collider
+  - first:
+      33: 3300018
+    second: Trees-Collider
+  - first:
+      33: 3300020
+    second: Parkbench-Collider
+  - first:
+      33: 3300022
+    second: Road-Mark-Rev
+  - first:
+      33: 3300024
+    second: Double-Block-05-Sidewalk
+  - first:
+      33: 3300026
+    second: Collider-Road-B
+  - first:
+      33: 3300028
+    second: Collider-Road-C
+  - first:
+      33: 3300030
+    second: Colliders-B
+  - first:
+      33: 3300032
+    second: Colliders-C
+  - first:
+      33: 3300034
+    second: Double-Block-05-B
+  - first:
+      33: 3300036
+    second: Double-Block-05-C
+  - first:
+      33: 3300038
+    second: Double-Block-05-Sidewalk-B
+  - first:
+      33: 3300040
+    second: Double-Block-05-Sidewalk-C
+  - first:
+      33: 3300042
+    second: Road-Mark-B
+  - first:
+      33: 3300044
+    second: Road-Mark-C
+  - first:
+      33: 3300046
+    second: Road-Mark-Rev-B
+  - first:
+      33: 3300048
+    second: Road-Mark-Rev-C
+  - first:
+      43: 4300000
+    second: Collider-Road
+  - first:
+      43: 4300002
+    second: Road-Mark
+  - first:
+      43: 4300004
+    second: Double-Block-05
+  - first:
+      43: 4300006
+    second: Colliders
+  - first:
+      43: 4300008
+    second: Collider-Grass
+  - first:
+      43: 4300010
+    second: StreetLight-01b
+  - first:
+      43: 4300012
+    second: Trees
+  - first:
+      43: 4300014
+    second: Trees-Collider
+  - first:
+      43: 4300016
+    second: Parkbench
+  - first:
+      43: 4300018
+    second: Parkbench--Collider
+  - first:
+      43: 4300020
+    second: Parkbench-Collider
+  - first:
+      43: 4300022
+    second: Road-Mark-Rev
+  - first:
+      43: 4300024
+    second: Double-Block-05-Sidewalk
+  - first:
+      43: 4300026
+    second: Double-Block-05-B
+  - first:
+      43: 4300028
+    second: Double-Block-05-C
+  - first:
+      43: 4300030
+    second: Double-Block-05-Sidewalk-B
+  - first:
+      43: 4300032
+    second: Double-Block-05-Sidewalk-C
+  - first:
+      43: 4300034
+    second: Colliders-B
+  - first:
+      43: 4300036
+    second: Colliders-C
+  - first:
+      43: 4300038
+    second: Collider-Road-B
+  - first:
+      43: 4300040
+    second: Collider-Road-C
+  - first:
+      43: 4300042
+    second: Road-Mark-B
+  - first:
+      43: 4300044
+    second: Road-Mark-C
+  - first:
+      43: 4300046
+    second: Road-Mark-Rev-B
+  - first:
+      43: 4300048
+    second: Road-Mark-Rev-C
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -162,7 +416,7 @@ ModelImporter:
       name: Trees-01
     second: {fileID: 2100000, guid: 02e4ddcf3844c6b4dad2b8d7d998265e, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
     materialLocation: 0
@@ -171,6 +425,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -192,28 +447,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -222,10 +488,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -235,13 +501,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 

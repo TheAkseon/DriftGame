@@ -1,70 +1,194 @@
 fileFormatVersion: 2
 guid: 641da51a2d246f94394d45ad189656dd
 ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: Collider-Road
-    100002: Colliders
-    100004: //RootNode
-    100006: Double-Block-03
-    100008: Road-Mark
-    100010: Road-Mark-Rev
-    100012: Double-Block-03-Sidewalk
-    100014: Collider-Road-B
-    100016: Colliders-B
-    100018: Double-Block-03-B
-    100020: Double-Block-03-Sidewalk-B
-    100022: Road-Mark-B
-    100024: Road-Mark-Rev-B
-    400000: Collider-Road
-    400002: Colliders
-    400004: //RootNode
-    400006: Double-Block-03
-    400008: Road-Mark
-    400010: Road-Mark-Rev
-    400012: Double-Block-03-Sidewalk
-    400014: Collider-Road-B
-    400016: Colliders-B
-    400018: Double-Block-03-B
-    400020: Double-Block-03-Sidewalk-B
-    400022: Road-Mark-B
-    400024: Road-Mark-Rev-B
-    2300000: Collider-Road
-    2300002: Colliders
-    2300004: Double-Block-03
-    2300006: Road-Mark
-    2300008: Road-Mark-Rev
-    2300010: Double-Block-03-Sidewalk
-    2300012: Collider-Road-B
-    2300014: Colliders-B
-    2300016: Double-Block-03-B
-    2300018: Double-Block-03-Sidewalk-B
-    2300020: Road-Mark-B
-    2300022: Road-Mark-Rev-B
-    3300000: Collider-Road
-    3300002: Colliders
-    3300004: Double-Block-03
-    3300006: Road-Mark
-    3300008: Road-Mark-Rev
-    3300010: Double-Block-03-Sidewalk
-    3300012: Collider-Road-B
-    3300014: Colliders-B
-    3300016: Double-Block-03-B
-    3300018: Double-Block-03-Sidewalk-B
-    3300020: Road-Mark-B
-    3300022: Road-Mark-Rev-B
-    4300000: Double-Block-03
-    4300002: Road-Mark
-    4300004: Collider-Road
-    4300006: Colliders
-    4300008: Road-Mark-Rev
-    4300010: Double-Block-03-Sidewalk
-    4300012: Collider-Road-B
-    4300014: Colliders-B
-    4300016: Double-Block-03-B
-    4300018: Double-Block-03-Sidewalk-B
-    4300020: Road-Mark-B
-    4300022: Road-Mark-Rev-B
+  serializedVersion: 22200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Collider-Road
+  - first:
+      1: 100002
+    second: Colliders
+  - first:
+      1: 100004
+    second: //RootNode
+  - first:
+      1: 100006
+    second: Double-Block-03
+  - first:
+      1: 100008
+    second: Road-Mark
+  - first:
+      1: 100010
+    second: Road-Mark-Rev
+  - first:
+      1: 100012
+    second: Double-Block-03-Sidewalk
+  - first:
+      1: 100014
+    second: Collider-Road-B
+  - first:
+      1: 100016
+    second: Colliders-B
+  - first:
+      1: 100018
+    second: Double-Block-03-B
+  - first:
+      1: 100020
+    second: Double-Block-03-Sidewalk-B
+  - first:
+      1: 100022
+    second: Road-Mark-B
+  - first:
+      1: 100024
+    second: Road-Mark-Rev-B
+  - first:
+      4: 400000
+    second: Collider-Road
+  - first:
+      4: 400002
+    second: Colliders
+  - first:
+      4: 400004
+    second: //RootNode
+  - first:
+      4: 400006
+    second: Double-Block-03
+  - first:
+      4: 400008
+    second: Road-Mark
+  - first:
+      4: 400010
+    second: Road-Mark-Rev
+  - first:
+      4: 400012
+    second: Double-Block-03-Sidewalk
+  - first:
+      4: 400014
+    second: Collider-Road-B
+  - first:
+      4: 400016
+    second: Colliders-B
+  - first:
+      4: 400018
+    second: Double-Block-03-B
+  - first:
+      4: 400020
+    second: Double-Block-03-Sidewalk-B
+  - first:
+      4: 400022
+    second: Road-Mark-B
+  - first:
+      4: 400024
+    second: Road-Mark-Rev-B
+  - first:
+      23: 2300000
+    second: Collider-Road
+  - first:
+      23: 2300002
+    second: Colliders
+  - first:
+      23: 2300004
+    second: Double-Block-03
+  - first:
+      23: 2300006
+    second: Road-Mark
+  - first:
+      23: 2300008
+    second: Road-Mark-Rev
+  - first:
+      23: 2300010
+    second: Double-Block-03-Sidewalk
+  - first:
+      23: 2300012
+    second: Collider-Road-B
+  - first:
+      23: 2300014
+    second: Colliders-B
+  - first:
+      23: 2300016
+    second: Double-Block-03-B
+  - first:
+      23: 2300018
+    second: Double-Block-03-Sidewalk-B
+  - first:
+      23: 2300020
+    second: Road-Mark-B
+  - first:
+      23: 2300022
+    second: Road-Mark-Rev-B
+  - first:
+      33: 3300000
+    second: Collider-Road
+  - first:
+      33: 3300002
+    second: Colliders
+  - first:
+      33: 3300004
+    second: Double-Block-03
+  - first:
+      33: 3300006
+    second: Road-Mark
+  - first:
+      33: 3300008
+    second: Road-Mark-Rev
+  - first:
+      33: 3300010
+    second: Double-Block-03-Sidewalk
+  - first:
+      33: 3300012
+    second: Collider-Road-B
+  - first:
+      33: 3300014
+    second: Colliders-B
+  - first:
+      33: 3300016
+    second: Double-Block-03-B
+  - first:
+      33: 3300018
+    second: Double-Block-03-Sidewalk-B
+  - first:
+      33: 3300020
+    second: Road-Mark-B
+  - first:
+      33: 3300022
+    second: Road-Mark-Rev-B
+  - first:
+      43: 4300000
+    second: Double-Block-03
+  - first:
+      43: 4300002
+    second: Road-Mark
+  - first:
+      43: 4300004
+    second: Collider-Road
+  - first:
+      43: 4300006
+    second: Colliders
+  - first:
+      43: 4300008
+    second: Road-Mark-Rev
+  - first:
+      43: 4300010
+    second: Double-Block-03-Sidewalk
+  - first:
+      43: 4300012
+    second: Collider-Road-B
+  - first:
+      43: 4300014
+    second: Colliders-B
+  - first:
+      43: 4300016
+    second: Double-Block-03-B
+  - first:
+      43: 4300018
+    second: Double-Block-03-Sidewalk-B
+  - first:
+      43: 4300020
+    second: Road-Mark-B
+  - first:
+      43: 4300022
+    second: Road-Mark-Rev-B
   externalObjects:
   - first:
       type: UnityEngine:Material
@@ -87,7 +211,7 @@ ModelImporter:
       name: Roads
     second: {fileID: 2100000, guid: 9936a8d66f306b7488a2e8cf3d4088a0, type: 2}
   materials:
-    importMaterials: 1
+    materialImportMode: 1
     materialName: 0
     materialSearch: 2
     materialLocation: 0
@@ -96,6 +220,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
@@ -117,28 +242,39 @@ ModelImporter:
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 0
+    meshCompression: 3
     addColliders: 0
     useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importPhysicalCameras: 1
     importVisibility: 0
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 1
     useFileUnits: 1
-    optimizeMeshForGPU: 1
     keepQuads: 0
     weldVertices: 1
+    bakeAxisConversion: 0
     preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -147,10 +283,10 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
+  referencedClips: []
   importAnimation: 1
-  copyAvatar: 0
   humanDescription:
-    serializedVersion: 2
+    serializedVersion: 3
     human: []
     skeleton: []
     armTwist: 0.5
@@ -160,13 +296,19 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
+    globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 0
   humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  importBlendShapeDeformPercent: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
