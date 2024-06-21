@@ -2741,8 +2741,8 @@ MonoBehaviour:
   _driftScoreText: {fileID: 2029570624}
   _driftScoreTitle: {fileID: 1693644914}
   _driftTreshold: 10
-  _requiredSpeed: 10
-  _timeToEnrollDriftScore: 2
+  _requiredSpeed: 20
+  _timeToEnrollDriftScore: 0.7
   driftThreshold: 10
   scoreMilestones:
   - 500

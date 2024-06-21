@@ -106,6 +106,8 @@ public class DriftScore : MonoBehaviour
             _recordCountDriftScoreNumberText.text = SaveData.Instance.Data.RecordDriftScore.ToString();
         }
 
+        currentMultiplierIndex = 0;
+
         driftScore = 0;
 
         SaveData.Instance.SaveYandex();
