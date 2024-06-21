@@ -4,12 +4,18 @@ using TMPro;
 
 public class DriftScore : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI _countCoinsNumberText;
+    [SerializeField] private TextMeshProUGUI _countDriftScoreNumberText;
+    [SerializeField] private TextMeshProUGUI _recordCountDriftScoreNumberText;
+
     [SerializeField] private TextMeshProUGUI _driftScoreMultiplier;
     [SerializeField] private TextMeshProUGUI _driftScoreText;
     [SerializeField] private TextMeshProUGUI _driftScoreTitle;
 
     [SerializeField] private float _driftTreshold = 10f;
     [SerializeField] private float _requiredSpeed = 10f;
+
+    [SerializeField] private float _timeToEnrollDriftScore;
 
     private RCC_CarControllerV3 _rccCarController;
     private bool _isDrifting = false;
@@ -24,6 +30,10 @@ public class DriftScore : MonoBehaviour
     private float driftStartTime = 0f;
 
     private bool _isActivateMultiplier = false;
+    private float _timeWithoutDrift = 0;
+
+    private int _countDriftScoreEarnedPerLevel = 0;
+    private int _countCoinsEarnedPerLevel = 0;
 
     private void Start()
     {
@@ -31,6 +41,8 @@ public class DriftScore : MonoBehaviour
         _driftScoreMultiplier.gameObject.SetActive(false);
         _driftScoreText.gameObject.SetActive(false);
         _driftScoreTitle.gameObject.SetActive(false);
+
+        _recordCountDriftScoreNumberText.text = SaveData.Instance.Data.RecordDriftScore.ToString();
     }
 
     private void Update()
@@ -44,10 +56,13 @@ public class DriftScore : MonoBehaviour
                 StartDrift();
             }
             UpdateDrift(driftAngle);
+            _timeWithoutDrift = 0;
         }
         else
         {
-            if (_isDrifting)
+            _timeWithoutDrift += Time.deltaTime;
+
+            if (_isDrifting && _timeWithoutDrift > _timeToEnrollDriftScore)
             {
                 EndDrift();
             }
@@ -66,16 +81,30 @@ public class DriftScore : MonoBehaviour
 
     void EndDrift()
     {
+
+
         _isDrifting = false;
+        _timeWithoutDrift = 0;
         //float driftDuration = Time.time - driftStartTime;
         //driftScore += driftDuration * 10f * multipliers[currentMultiplierIndex]; // Применение множителя
         Debug.Log("Drift Score: " + driftScore);
         //CheckForMilestones();
         SaveData.Instance.Data.Coins += Convert.ToInt32(driftScore * 0.5f);
+        _countCoinsEarnedPerLevel += Convert.ToInt32(driftScore * 0.5f);
+        _countDriftScoreEarnedPerLevel += Convert.ToInt32(driftScore);
 
         _driftScoreMultiplier.gameObject.SetActive(false);
         _driftScoreText.gameObject.SetActive(false);
         _driftScoreTitle.gameObject.SetActive(false);
+
+        _countCoinsNumberText.text = _countCoinsEarnedPerLevel.ToString();
+        _countDriftScoreNumberText.text = _countDriftScoreEarnedPerLevel.ToString();
+
+        if(driftScore > SaveData.Instance.Data.RecordDriftScore)
+        {
+            SaveData.Instance.Data.RecordDriftScore = Convert.ToInt32(driftScore);
+            _recordCountDriftScoreNumberText.text = SaveData.Instance.Data.RecordDriftScore.ToString();
+        }
 
         driftScore = 0;
 
