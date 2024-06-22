@@ -23,10 +23,10 @@ namespace FCG
         public GameObject[] IaCars;
 
         public int nVehicles = 0;
-        public int maxVehiclesWithPlayer = 50;
+        public int maxVehiclesWithPlayer = 10;
 
-        [Range(100, 200)]
-        public float around = 150;
+        [Range(10, 40)]
+        public float around = 20;
 
         private ArrayList spawnsPoints;
 
@@ -328,7 +328,7 @@ namespace FCG
 
             Transform test = new GameObject("verify").transform;
 
-            for (int j = 0; j < n; j++)
+            for (int j = 0; j < 20; j++)
             {
 
                 int i = (invert) ? n - 1 - j : j;
