@@ -6,3 +6,10 @@ NativeFormatImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 16296
+  packageName: Realistic Car Controller
+  packageVersion: 3.70
+  assetPath: Assets/RealisticCarControllerV3/Models/City/Mat/Tire.mat
+  uploadId: 603205
